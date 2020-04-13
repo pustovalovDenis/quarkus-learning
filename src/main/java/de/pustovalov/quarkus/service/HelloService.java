@@ -1,17 +1,18 @@
 package de.pustovalov.quarkus.service;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.spi.BeanManager;
 
+import de.pustovalov.quarkus.event.GreetingEventSource;
 import lombok.RequiredArgsConstructor;
 
 @ApplicationScoped
 @RequiredArgsConstructor
 public class HelloService {
 
-    private final BeanManager beanManager;
+    private final GreetingEventSource greetingEvent;
 
     public String greeting(String name) {
+        greetingEvent.fireGreetingEvent(name);
         return "hello " + name;
     }
 

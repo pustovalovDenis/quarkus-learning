@@ -64,6 +64,24 @@
       <scope>provided</scope>
     </dependency>
 
+      <!-- Hibernate ORM specific dependencies -->
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-hibernate-orm-panache</artifactId>
+      </dependency>
+
+      <!-- JDBC driver dependencies -->
+      <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-jdbc-postgresql</artifactId>
+      </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-spring-web</artifactId>
+    </dependency>
+
   </dependencies>
   <build>
     <plugins>
