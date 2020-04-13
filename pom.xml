@@ -82,7 +82,12 @@
       <artifactId>quarkus-spring-web</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-rest-client</artifactId>
+    </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
