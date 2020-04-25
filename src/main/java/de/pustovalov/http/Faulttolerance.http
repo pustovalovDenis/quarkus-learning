@@ -1,0 +1,15 @@
+GET http://localhost:9090/coffee
+Accept: application/json
+
+###
+
+
+GET http://localhost:9090/coffee/2/recommendations
+Accept: application/json
+
+###
+
+GET http://localhost:9090/coffee/2/availability
+Accept: application/json
+
+###
