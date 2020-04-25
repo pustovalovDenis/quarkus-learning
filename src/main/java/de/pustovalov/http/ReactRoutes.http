@@ -1,0 +1,10 @@
+GET http://localhost:9090/route/greetings?name=denis
+Accept: application/json
+
+###
+
+GET http://localhost:9090/route
+Accept: application/json
+
+###
+
