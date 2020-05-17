@@ -1,0 +1,1 @@
+GET http://localhost:9090/weather?city=Raleigh&daysInFuture=1
